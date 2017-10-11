@@ -27,3 +27,12 @@ class Cat
     puts "Running to the #{destination}"
   end
 end
+
+bird = Bird.new
+dog = Dog.new
+cat = Cat.new
+
+bird.move('truee')
+dog.talk
+bird.talk
+cat.move('house')
