@@ -1,4 +1,6 @@
 class Steak
+  include Comparable
+
   GRADE_SCORES = { 'Prime' => 3, 'Choice' => 2, 'Select' => 1 }
 
   attr_accessor :grade
@@ -23,13 +25,10 @@ first_steak.grade = 'Prime'
 second_steak = Steak.new
 second_steak.grade = 'Choice'
 
-puts first_steak <=> second_steak
-puts second_steak <=> first_steak
+if first_steak > second_steak
+  puts "I'll take #{first_steak.inspect}"
+end
 
-#if first_steak > second_steak
-#  puts "I'll take #{first_steak.inspect}"
-#end
-
-#if first_steak < second_steak
-#  puts "I'll take #{second_steak.inspect}"
-#end
+if first_steak < second_steak
+  puts "I'll take #{second_steak.inspect}"
+end
