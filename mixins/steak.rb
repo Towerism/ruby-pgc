@@ -16,3 +16,7 @@ second_steak.grade = 'Choice'
 if first_steak > second_steak
   puts "I'll take #{first_steak.inspect}"
 end
+
+if first_steak < second_steak
+  puts "I'll take #{second_steak.inspect}"
+end
