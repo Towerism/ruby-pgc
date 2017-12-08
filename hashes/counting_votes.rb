@@ -11,4 +11,6 @@ lines.each do |line|
   votes[name] += 1
 end
 
-p votes
+votes.each do |name, count|
+  puts "#{name}: #{count}"
+end
