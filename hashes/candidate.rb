@@ -19,5 +19,5 @@ def print_summary(candidate)
 end
 
 candidate = Candidate.new("Carl Barnes", 
-  :age => 49, :occupation => "Attorney", :birthplace => "Miami")
+  age: 49, occupation: "Attorney", birthplace: "Miami")
 print_summary(candidate)
