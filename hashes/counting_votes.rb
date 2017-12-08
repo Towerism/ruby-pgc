@@ -7,7 +7,11 @@ votes = {}
 
 lines.each do |line|
   name = line.chomp
-  votes[name] += 1
+  if votes[name] != nil
+    votes[name] += 1
+  else
+    votes[name] = 1
+  end
 end
 
 p votes
