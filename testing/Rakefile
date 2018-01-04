@@ -1,0 +1,6 @@
+require 'rake/testtask' # Load Rake's specialized task for running tests
+
+Rake::TestTask.new(:test) do |t| # set up a task named "test"
+  t.libs << 'lib' # set up to load required ruby files from 'lib' directory
+  t.test_files = FileList.new('test/**/test_*.rb') # run all test files from the 'test' directory
+end
